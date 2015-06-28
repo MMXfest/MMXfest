@@ -18,15 +18,24 @@
             android:layout_weight="1"
             android:padding="2dp"
             android:background="@color/white"
-            android:layout_margin="1dp">
+            android:layout_margin="1dp"
+            android:id="@+id/imagesLayout">
 
-            <TextView
+            TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Images"
                 android:id="@+id/textView"
                 android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView1"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/images" />
         </LinearLayout>
 
         <LinearLayout
@@ -36,15 +45,16 @@
             android:layout_weight="1"
             android:padding="2dp"
             android:background="@color/white"
-            android:layout_margin="1dp">
+            android:layout_margin="1dp"
+            android:id="@+id/contactsLayout">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Contacts"
-                android:id="@+id/textView2"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageView2"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/contact" />
         </LinearLayout>
     </LinearLayout>
 
@@ -62,15 +72,17 @@
             android:layout_weight="1"
             android:padding="2dp"
             android:background="@color/white"
-            android:layout_margin="1dp">
+            android:layout_margin="1dp"
+            android:id="@+id/musicLayout">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Music"
-                android:id="@+id/textView3"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageView3"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/music" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -80,15 +92,17 @@
             android:layout_weight="1"
             android:padding="2dp"
             android:background="@color/white"
-            android:layout_margin="1dp">
+            android:layout_margin="1dp"
+            android:id="@+id/videosLayout">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Videos"
-                android:id="@+id/textView4"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageView4"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/videos" />
+
         </LinearLayout>
     </LinearLayout>
 
@@ -105,8 +119,15 @@
             android:layout_weight="1"
             android:padding="2dp"
             android:background="@color/white"
-            android:layout_margin="1dp">
-
+            android:layout_margin="1dp"
+            android:id="@+id/doscLayout">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView5"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/doc" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,12 +144,15 @@
             android:layout_weight="1"
             android:padding="2dp"
             android:background="@color/white"
-            android:layout_margin="1dp">
+            android:layout_margin="1dp"
+            android:id="@+id/addButtonLayout">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
                 android:id="@+id/imageAddButton"
+                android:src="@drawable/plus"
                 android:layout_gravity="center" />
         </LinearLayout>
     </LinearLayout>

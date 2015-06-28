@@ -20,13 +20,14 @@
             android:layout_margin="1dp"
             android:background="@color/white">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Images"
-                android:id="@+id/textView"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageView1"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/images" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -38,13 +39,13 @@
             android:background="@color/white"
             android:layout_margin="1dp">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Videos"
-                android:id="@+id/textView7"
-                android:layout_gravity="center_horizontal" />
+                android:id="@+id/imageView4"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/videos" />
         </LinearLayout>
     </LinearLayout>
 
@@ -62,7 +63,16 @@
             android:layout_weight="1"
             android:padding="2dp"
             android:layout_margin="1dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:id="@+id/contactsLayout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/contact" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,7 +80,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Contacts"
                 android:id="@+id/textView8"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -82,13 +92,13 @@
             android:layout_margin="1dp"
             android:background="@color/white">
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Docs"
-                android:id="@+id/textView6"
-                android:layout_gravity="center_horizontal"/>
+                android:id="@+id/imageView5"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/doc" />
         </LinearLayout>
     </LinearLayout>
 
@@ -107,13 +117,13 @@
             android:background="@color/white"
             android:layout_margin="1dp">
 
-            <TextView
-                android:layout_width="79dp"
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Music"
+                android:id="@+id/imageView3"
+                android:layout_margin="20dp"
                 android:layout_gravity="center_horizontal"
-                android:id="@+id/textView3" />
+                android:src="@drawable/music" />
         </LinearLayout>
 
         <LinearLayout
@@ -126,10 +136,12 @@
             android:layout_margin="1dp">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
                 android:id="@+id/imageAddButton"
-                android:layout_gravity="center"/>
+                android:src="@drawable/plus"
+                android:layout_gravity="center" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
